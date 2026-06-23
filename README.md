@@ -38,4 +38,4 @@ Curvas de **Bézier** em JavaScript (`script.js`) — demo interativa no navegad
 
 **Rodrigo Viana Quirino** — Ciência da Computação, PUC Goiás.
 
-Repositório privado na conta [rodviana](https://github.com/rodviana).
+Repositório público na conta [rodviana](https://github.com/rodviana).

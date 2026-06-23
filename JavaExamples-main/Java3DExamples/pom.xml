@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>Java3DExamples</artifactId>
+    <properties>
+        <main.class>j3d.DisplayFrame</main.class>
+    </properties>
+    <parent>
+        <groupId>net</groupId>
+        <artifactId>javaexamples</artifactId>
+        <version>1.0</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <systemProperties>
+                        <property>
+                            <name>java.library.path</name>
+                            <value>${basedir}/lib</value>
+                        </property>
+                    </systemProperties>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <dependencies>
+        <dependency>
+            <groupId>java3d</groupId>
+            <artifactId>j3d-core</artifactId>
+            <version>1.3.1</version>
+        </dependency>
+        <dependency>
+            <groupId>java3d</groupId>
+            <artifactId>j3d-core-utils</artifactId>
+            <version>1.3.1</version>
+        </dependency>
+    </dependencies>
+</project>
